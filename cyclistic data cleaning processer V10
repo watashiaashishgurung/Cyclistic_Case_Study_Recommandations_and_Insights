@@ -1,0 +1,499 @@
+## installing packages
+
+install.packages("tidyverse")
+install.packages("dplyr")
+install.packages("readr")
+
+## loading libraries
+
+library(tidyverse)
+library(dplyr)
+library(readr)
+
+## observing data with
+
+glimpse(df)
+head(df)
+str(df)
+colnames(df)
+
+# first we are going to import our datasets
+# than we are going to chunk our data by seperating and merging data into datachunks 
+
+Q1 <- read_csv("file_location")
+Q2 <- read_csv("file_location")
+Q3 <- read_csv("file_location")
+Q4 <- read_csv("file_location")
+
+jan <- read_csv("file_location")
+feb <- read_csv("file_location")
+mar <- read_csv("file_location")
+apr <- read_csv("file_location")
+may <- read_csv("file_location")
+jun <- read_csv("file_location")
+jul <- read_csv("file_location")
+aug <- read_csv("file_location")
+sep <- read_csv("file_location")
+oct <- read_csv("file_location")
+nov <- read_csv("file_location")
+dec <- read_csv("file_location")
+
+Q1 <- rbind(jan, feb, mar)
+Q2 <- rbind(apr, may, jun)
+Q3 <- rbind(jul, aug, sep)
+Q4 <- rbind(oct, nov, dec)
+
+## a bug here where the 2nd 3rd and final quarter of the year in 2013 was a duplicate of the first quarter
+## this did not effect my data analysis as we only had to filter the first quarter of 2013 for data analysis (fixed on 03/04/2024)
+
+ jan <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-01-01 00:00:00'), as.Date('2013-02-01 00:00:00')))
+ feb <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-02-01 00:00:00'), as.Date('2013-03-01 00:00:00')))
+ mar <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-03-01 00:00:00'), as.Date('2013-04-01 00:00:00')))
+ apr <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-04-01 00:00:00'), as.Date('2013-05-01 00:00:00')))
+ may <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-05-01 00:00:00'), as.Date('2013-06-31 00:00:00')))
+ jun <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-06-01 00:00:00'), as.Date('2013-07-01 00:00:00')))
+ jul <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-07-01 00:00:00'), as.Date('2013-08-01 00:00:00')))
+ aug <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-08-01 00:00:00'), as.Date('2013-09-31 00:00:00')))
+ sep <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-09-01 00:00:00'), as.Date('2013-10-01 00:00:00')))
+ oct <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-10-01 00:00:00'), as.Date('2013-11-01 00:00:00')))
+ nov <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-11-01 00:00:00'), as.Date('2013-12-01 00:00:00')))
+ dec <- datasets %>% filter(between(dataset$datacolumn, as.Date('2013-12-01 00:00:00'), as.Date('2013-12-31 23:59:59')))
+
+Q1 <- rbind(jan, feb, mar)
+Q2 <- rbind(apr, may, jun)
+Q3 <- rbind(jul, aug, sep)
+Q4 <- rbind(oct, nov, dec)
+
+## cleaning colnames
+## before 2020
+
+colnames(Q1) [1] <- "trip_id"
+colnames(Q1) [2] <- "start_time"
+colnames(Q1) [3] <- "end_time"
+colnames(Q1) [4] <- "bikeid"
+colnames(Q1) [5] <- "tripduration"
+colnames(Q1) [6] <- "from_station_id"
+colnames(Q1) [7] <- "from_station_name"
+colnames(Q1) [8] <- "to_station_id"
+colnames(Q1) [9] <- "to_station_name"
+colnames(Q1) [10] <- "usertype"
+colnames(Q1) [11] <- "gender"
+colnames(Q1) [12] <- "birthyear"
+colnames(Q1) [13] <- ""
+
+colnames(Q2) [1] <- "trip_id"
+colnames(Q2) [2] <- "start_time"
+colnames(Q2) [3] <- "end_time"
+colnames(Q2) [4] <- "bikeid"
+colnames(Q2) [5] <- "tripduration"
+colnames(Q2) [6] <- "from_station_id"
+colnames(Q2) [7] <- "from_station_name"
+colnames(Q2) [8] <- "to_station_id"
+colnames(Q2) [9] <- "to_station_name"
+colnames(Q2) [10] <- "usertype"
+colnames(Q2) [11] <- "gender"
+colnames(Q2) [12] <- "birthyear"
+colnames(Q2) [13] <- ""
+
+colnames(Q3) [1] <- "trip_id"
+colnames(Q3) [2] <- "start_time"
+colnames(Q3) [3] <- "end_time"
+colnames(Q3) [4] <- "bikeid"
+colnames(Q3) [5] <- "tripduration"
+colnames(Q3) [6] <- "from_station_id"
+colnames(Q3) [7] <- "from_station_name"
+colnames(Q3) [8] <- "to_station_id"
+colnames(Q3) [9] <- "to_station_name"
+colnames(Q3) [10] <- "usertype"
+colnames(Q3) [11] <- "gender"
+colnames(Q3) [12] <- "birthyear"
+colnames(Q3) [13] <- ""
+
+colnames(Q4) [1] <- "trip_id"
+colnames(Q4) [2] <- "start_time"
+colnames(Q4) [3] <- "end_time"
+colnames(Q4) [4] <- "bikeid"
+colnames(Q4) [5] <- "tripduration"
+colnames(Q4) [6] <- "from_station_id"
+colnames(Q4) [7] <- "from_station_name"
+colnames(Q4) [8] <- "to_station_id"
+colnames(Q4) [9] <- "to_station_name"
+colnames(Q4) [10] <- "usertype"
+colnames(Q4) [11] <- "gender"
+colnames(Q4) [12] <- "birthyear"
+colnames(Q4) [13] <- ""
+
+##from 2020
+
+colnames(Q1) [1] <- "trip_id"
+colnames(Q1) [2] <- "rideable_type"
+colnames(Q1) [3] <- "start_time"
+colnames(Q1) [4] <- "end_time"
+colnames(Q1) [5] <- "from_station_name"
+colnames(Q1) [6] <- "from_station_id"
+colnames(Q1) [7] <- "to_station_name"
+colnames(Q1) [8] <- "to_station_id"
+colnames(Q1) [9] <- "start_lat"
+colnames(Q1) [10] <- "start_lng"
+colnames(Q1) [11] <- "end_lat"
+colnames(Q1) [12] <- "end_lng"
+colnames(Q1) [13] <-"usertype"
+colnames(Q1) [14] <-""
+colnames(Q1) [15] <-""
+
+colnames(Q2) [1] <- "trip_id"
+colnames(Q2) [2] <- "rideable_type"
+colnames(Q2) [3] <- "start_time"
+colnames(Q2) [4] <- "end_time"
+colnames(Q2) [5] <- "from_station_name"
+colnames(Q2) [6] <- "from_station_id"
+colnames(Q2) [7] <- "to_station_name"
+colnames(Q2) [8] <- "to_station_id"
+colnames(Q2) [9] <- "start_lat"
+colnames(Q2) [10] <- "start_lng"
+colnames(Q2) [11] <- "end_lat"
+colnames(Q2) [12] <- "end_lng"
+colnames(Q2) [13] <-"usertype"
+colnames(Q2) [14] <-""
+colnames(Q2) [15] <-""
+
+colnames(Q3) [1] <- "trip_id"
+colnames(Q3) [2] <- "rideable_type"
+colnames(Q3) [3] <- "start_time"
+colnames(Q3) [4] <- "end_time"
+colnames(Q3) [5] <- "from_station_name"
+colnames(Q3) [6] <- "from_station_id"
+colnames(Q3) [7] <- "to_station_name"
+colnames(Q3) [8] <- "to_station_id"
+colnames(Q3) [9] <- "start_lat"
+colnames(Q3) [10] <- "start_lng"
+colnames(Q3) [11] <- "end_lat"
+colnames(Q3) [12] <- "end_lng"
+colnames(Q3) [13] <-"usertype"
+colnames(Q3) [14] <-""
+colnames(Q3) [15] <-""
+
+colnames(Q4) [1] <- "trip_id"
+colnames(Q4) [2] <- "rideable_type"
+colnames(Q4) [3] <- "start_time"
+colnames(Q4) [4] <- "end_time"
+colnames(Q4) [5] <- "from_station_name"
+colnames(Q4) [6] <- "from_station_id"
+colnames(Q4) [7] <- "to_station_name"
+colnames(Q4) [8] <- "to_station_id"
+colnames(Q4) [9] <- "start_lat"
+colnames(Q4) [10] <- "start_lng"
+colnames(Q4) [11] <- "end_lat"
+colnames(Q4) [12] <- "end_lng"
+colnames(Q4) [13] <-"usertype"
+colnames(Q4) [14] <-""
+colnames(Q4) [15] <-""
+
+colnames(jan) [1] <- "trip_id"
+colnames(jan) [2] <- "rideable_type"
+colnames(jan) [3] <- "start_time"
+colnames(jan) [4] <- "end_time"
+colnames(jan) [5] <- "from_station_name"
+colnames(jan) [6] <- "from_station_id"
+colnames(jan) [7] <- "to_station_name"
+colnames(jan) [8] <- "to_station_id"
+colnames(jan) [9] <- "start_lat"
+colnames(jan) [10] <- "start_lng"
+colnames(jan) [11] <- "end_lat"
+colnames(jan) [12] <- "end_lng"
+colnames(jan) [13] <-"usertype"
+
+colnames(feb) [1] <- "trip_id"
+colnames(feb) [2] <- "rideable_type"
+colnames(feb) [3] <- "start_time"
+colnames(feb) [4] <- "end_time"
+colnames(feb) [5] <- "from_station_name"
+colnames(feb) [6] <- "from_station_id"
+colnames(feb) [7] <- "to_station_name"
+colnames(feb) [8] <- "to_station_id"
+colnames(feb) [9] <- "start_lat"
+colnames(feb) [10] <- "start_lng"
+colnames(feb) [11] <- "end_lat"
+colnames(feb) [12] <- "end_lng"
+colnames(feb) [13] <-"usertype"
+  
+
+colnames(mar) [1] <- "trip_id"
+colnames(mar) [2] <- "rideable_type"
+colnames(mar) [3] <- "start_time"
+colnames(mar) [4] <- "end_time"
+colnames(mar) [5] <- "from_station_name"
+colnames(mar) [6] <- "from_station_id"
+colnames(mar) [7] <- "to_station_name"
+colnames(mar) [8] <- "to_station_id"
+colnames(mar) [9] <- "start_lat"
+colnames(mar) [10] <- "start_lng"
+colnames(mar) [11] <- "end_lat"
+colnames(mar) [12] <- "end_lng"
+colnames(mar) [13] <-"usertype"
+    
+colnames(apr) [1] <- "trip_id"
+colnames(apr) [2] <- "rideable_type"
+colnames(apr) [3] <- "start_time"
+colnames(apr) [4] <- "end_time"
+colnames(apr) [5] <- "from_station_name"
+colnames(apr) [6] <- "from_station_id"
+colnames(apr) [7] <- "to_station_name"
+colnames(apr) [8] <- "to_station_id"
+colnames(apr) [9] <- "start_lat"
+colnames(apr) [10] <- "start_lng"
+colnames(apr) [11] <- "end_lat"
+colnames(apr) [12] <- "end_lng"
+colnames(apr) [13] <-"usertype"
+
+colnames(may) [1] <- "trip_id"
+colnames(may) [2] <- "rideable_type"
+colnames(may) [3] <- "start_time"
+colnames(may) [4] <- "end_time"
+colnames(may) [5] <- "from_station_name"
+colnames(may) [6] <- "from_station_id"
+colnames(may) [7] <- "to_station_name"
+colnames(may) [8] <- "to_station_id"
+colnames(may) [9] <- "start_lat"
+colnames(may) [10] <- "start_lng"
+colnames(may) [11] <- "end_lat"
+colnames(may) [12] <- "end_lng"
+colnames(may) [13] <-"usertype"
+
+colnames(jun) [1] <- "trip_id"
+colnames(jun) [2] <- "rideable_type"
+colnames(jun) [3] <- "start_time"
+colnames(jun) [4] <- "end_time"
+colnames(jun) [5] <- "from_station_name"
+colnames(jun) [6] <- "from_station_id"
+colnames(jun) [7] <- "to_station_name"
+colnames(jun) [8] <- "to_station_id"
+colnames(jun) [9] <- "start_lat"
+colnames(jun) [10] <- "start_lng"
+colnames(jun) [11] <- "end_lat"
+colnames(jun) [12] <- "end_lng"
+colnames(jun) [13] <-"usertype"
+
+colnames(jul) [1] <- "trip_id"
+colnames(jul) [2] <- "rideable_type"
+colnames(jul) [3] <- "start_time"
+colnames(jul) [4] <- "end_time"
+colnames(jul) [5] <- "from_station_name"
+colnames(jul) [6] <- "from_station_id"
+colnames(jul) [7] <- "to_station_name"
+colnames(jul) [8] <- "to_station_id"
+colnames(jul) [9] <- "start_lat"
+colnames(jul) [10] <- "start_lng"
+colnames(jul) [11] <- "end_lat"
+colnames(jul) [12] <- "end_lng"
+colnames(jul) [13] <-"usertype"
+
+colnames(aug) [1] <- "trip_id"
+colnames(aug) [2] <- "rideable_type"
+colnames(aug) [3] <- "start_time"
+colnames(aug) [4] <- "end_time"
+colnames(aug) [5] <- "from_station_name"
+colnames(aug) [6] <- "from_station_id"
+colnames(aug) [7] <- "to_station_name"
+colnames(aug) [8] <- "to_station_id"
+colnames(aug) [9] <- "start_lat"
+colnames(aug) [10] <- "start_lng"
+colnames(aug) [11] <- "end_lat"
+colnames(aug) [12] <- "end_lng"
+colnames(aug) [13] <-"usertype"
+
+colnames(sep) [1] <- "trip_id"
+colnames(sep) [2] <- "rideable_type"
+colnames(sep) [3] <- "start_time"
+colnames(sep) [4] <- "end_time"
+colnames(sep) [5] <- "from_station_name"
+colnames(sep) [6] <- "from_station_id"
+colnames(sep) [7] <- "to_station_name"
+colnames(sep) [8] <- "to_station_id"
+colnames(sep) [9] <- "start_lat"
+colnames(sep) [10] <- "start_lng"
+colnames(sep) [11] <- "end_lat"
+colnames(sep) [12] <- "end_lng"
+colnames(sep) [13] <-"usertype"
+
+colnames(oct) [1] <- "trip_id"
+colnames(oct) [2] <- "rideable_type"
+colnames(oct) [3] <- "start_time"
+colnames(oct) [4] <- "end_time"
+colnames(oct) [5] <- "from_station_name"
+colnames(oct) [6] <- "from_station_id"
+colnames(oct) [7] <- "to_station_name"
+colnames(oct) [8] <- "to_station_id"
+colnames(oct) [9] <- "start_lat"
+colnames(oct) [10] <- "start_lng"
+colnames(oct) [11] <- "end_lat"
+colnames(oct) [12] <- "end_lng"
+colnames(oct) [13] <-"usertype"
+
+colnames(nov) [1] <- "trip_id"
+colnames(nov) [2] <- "rideable_type"
+colnames(nov) [3] <- "start_time"
+colnames(nov) [4] <- "end_time"
+colnames(nov) [5] <- "from_station_name"
+colnames(nov) [6] <- "from_station_id"
+colnames(nov) [7] <- "to_station_name"
+colnames(nov) [8] <- "to_station_id"
+colnames(nov) [9] <- "start_lat"
+colnames(nov) [10] <- "start_lng"
+colnames(nov) [11] <- "end_lat"
+colnames(nov) [12] <- "end_lng"
+colnames(nov) [13] <-"usertype"
+
+colnames(dec) [1] <- "trip_id"
+colnames(dec) [2] <- "rideable_type"
+colnames(dec) [3] <- "start_time"
+colnames(dec) [4] <- "end_time"
+colnames(dec) [5] <- "from_station_name"
+colnames(dec) [6] <- "from_station_id"
+colnames(dec) [7] <- "to_station_name"
+colnames(dec) [8] <- "to_station_id"
+colnames(dec) [9] <- "start_lat"
+colnames(dec) [10] <- "start_lng"
+colnames(dec) [11] <- "end_lat"
+colnames(dec) [12] <- "end_lng"
+colnames(dec) [13] <-"usertype"
+
+## removing na's
+
+any(is.na(Q1[]))
+any(is.na(Q2[]))
+any(is.na(Q3[]))
+any(is.na(Q4[]))
+
+sum(is.na(Q1))
+sum(is.na(Q2))
+sum(is.na(Q3))
+sum(is.na(Q4))
+
+sum(duplicated(Q1))
+sum(duplicated(Q2))
+sum(duplicated(Q3))
+sum(duplicated(Q4))
+
+colSums(is.na(Q1))
+colSums(is.na(Q2))
+colSums(is.na(Q3))
+colSums(is.na(Q4))
+
+sum(duplicated(Q1),na.rm = TRUE)
+sum(duplicated(Q2),na.rm = TRUE)
+sum(duplicated(Q3),na.rm = TRUE)
+sum(duplicated(Q4),na.rm = TRUE)
+
+
+Q1 %>%colSums(Q1, na.rm = TRUE)
+Q2 %>%colSums(Q2, na.rm = TRUE)
+Q3 %>%colSums(Q3, na.rm = TRUE)
+Q4 %>%colSums(Q4, na.rm = TRUE)
+
+
+Q1 <- na.omit(Q1)
+Q2 <- na.omit(Q2)
+Q3 <- na.omit(Q3)
+Q4 <- na.omit(Q4)
+
+## adding new columns of relavent data
+
+Q1$day_of_week<-weekdays(Q1$start_time)
+Q2$day_of_week<-weekdays(Q2$start_time)
+Q3$day_of_week<-weekdays(Q3$start_time)
+Q4$day_of_week<-weekdays(Q4$start_time)
+
+Q1$tripduration<-Q1$end_time - Q1$start_time
+Q2$tripduration<-Q2$end_time - Q2$start_time
+Q3$tripduration<-Q3$end_time - Q3$start_time
+Q4$tripduration<-Q4$end_time - Q4$start_time
+
+## observing data
+
+min(Q1)
+max(Q1)
+mean(Q1$tripduration)
+
+min(Q2)
+max(Q2)
+mean(Q2$tripduration)
+
+min(Q3)
+max(Q3)
+mean(Q3$tripduration)
+
+min(Q4)
+max(Q4)
+mean(Q4$tripduration)
+
+sapply(Q1,max)
+sapply(Q2,max)
+sapply(Q3,max)
+sapply(Q4,max)
+
+## Removing unrelated columns
+
+Q1 = subset(Q1, select = -c(n))
+Q1 = subset(Q1, select = -c(n))
+Q1 = subset(Q1, select = -c(n))
+Q1 = subset(Q1, select = -c(n))
+
+Q2 = subset(Q1, select = -c(n))
+Q2 = subset(Q1, select = -c(n))
+Q2 = subset(Q1, select = -c(n))
+Q2 = subset(Q1, select = -c(n))
+
+Q3 = subset(Q1, select = -c(n))
+Q3 = subset(Q1, select = -c(n))
+Q3 = subset(Q1, select = -c(n))
+Q3 = subset(Q1, select = -c(n))
+
+Q4 = subset(Q1, select = -c(n))
+Q4 = subset(Q1, select = -c(n))
+Q4 = subset(Q1, select = -c(n))
+Q4 = subset(Q1, select = -c(n))
+
+## renaming dataframes
+
+cyclistic_year_Q1<-Q1
+cyclistic_year_Q2<-Q2
+cyclistic_year_Q3<-Q3
+cyclistic_year_Q4<-Q4
+
+cyclistic_year_Q1<-Q1
+cyclistic_year_Q2<-Q2
+cyclistic_year_Q3<-Q3
+cyclistic_year_Q4<-Q4
+
+cyclistic_year_Q1<-Q1
+cyclistic_year_Q2<-Q2
+cyclistic_year_Q3<-Q3
+cyclistic_year_Q4<-Q4
+
+cyclistic_year_Q1<-Q1
+cyclistic_year_Q2<-Q2
+cyclistic_year_Q3<-Q3
+cyclistic_year_Q4<-Q4
+
+## saving data as csv
+
+write.csv(cyclistic_2023_Q1,"cyearQ1.csv")
+write.csv(cyclistic_2023_Q2,"cyearQ2.csv")
+write.csv(cyclistic_2023_Q3,"cyearQ3.csv")
+write.csv(cyclistic_2023_Q4,"cyearQ4.csv")
+
+write.csv(cyclistic_2023_Q1,"cyearQ1.csv")
+write.csv(cyclistic_2023_Q2,"cyearQ2.csv")
+write.csv(cyclistic_2023_Q3,"cyearQ3.csv")
+write.csv(cyclistic_2023_Q4,"cyearQ4.csv")
+
+write.csv(cyclistic_2023_Q1,"cyearQ1.csv")
+write.csv(cyclistic_2023_Q2,"cyearQ2.csv")
+write.csv(cyclistic_2023_Q3,"cyearQ3.csv")
+write.csv(cyclistic_2023_Q4,"cyearQ4.csv")
+
+write.csv(cyclistic_2023_Q1,"cyearQ1.csv")
+write.csv(cyclistic_2023_Q2,"cyearQ2.csv")
+write.csv(cyclistic_2023_Q3,"cyearQ3.csv")
+write.csv(cyclistic_2023_Q4,"cyearQ4.csv")
