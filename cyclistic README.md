@@ -1,12 +1,13 @@
 First of all thank you for visitng my Hub. appriciate dropping by. 
-this is my first real case stdy as a data scientist. I might have have to updates this case study in the future. For now I'm proud that I made the finish line.
-The cyclistic dataset was over 7GM of size and going through it like I did was as if I had to go back to the invention of the wheel!
-I hope you guys credit me for the effort to make this task much easier. Feel free to sroll through my code to get just that what you need to fine tune your own case study.
-I'm sure you will appriciate the tools I collected. It is much more then you'll probably need but I wrote them all just for the complition of the tasks. 
-I had much fun completing this case study. It was a very insightfull jouney. I am happy to reash the finish line. Goodluck! Cheers! 
+This is my first real case stdy as a data scientist. I might have have to updates this case study in the future. For now I'm proud that I made the finish line.
+The cyclistic dataset was over 7GB of size and going through it like I did was as if I had to go back to the invention of the wheel!
+I hope you guys credit me for the effort to make this task much easier for you. Feel free to sroll through my code to get just that what you need to fine tune your own case study.
+I'm sure you will appriciate the tools I collected. It is much more than you'll probably need but I wrote them all just for the complition of the tasks.
+I had much fun completing this case study. It was a very insightfull jouney. I am happy to reach the finish line. Goodluck! Cheers! 
+
 You may want to use the same strategy for data analysis of other datasets.
 
-Without further ado. 
+Without further ado 
 
 here
 are
