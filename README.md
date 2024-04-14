@@ -18,3 +18,6 @@ We can provide an additional service of "Bellabeat", a digital smartwatch that t
 
 (this file still needs to be updated my findings are not definite (yet)) To be continued and to be completed with some R Markdown codes
 
+! Important Note! 
+Make sure that the Rebel is happy. When the rebel is not happy. That is injurious for the economy. Knowing healthy people spend more money because they have more money to spend.
+This enquires Physical, mental and digital health.
