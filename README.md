@@ -2,11 +2,11 @@ We can see from the timelines I created on tableau that most bikers like to ride
 
 Most years we reach peak tripdurations of custumors during the weekends of late summer. This is because of the holiday season. And in anticipation of the new acadamical year. The demand for a bike is then the highest due to verious reason.
 
-One of the reasons is the pleasent outside temperatures
-Another reason is as the traffic gets busier towards the end of the holidays, people are in need of quick and easy means of transportation
+One of the reasons is the pleasent outside temperatures.
+Another reason is as the traffic gets busier towards the end of the holidays, people are in need of quick and easy means of transportation.
 Another factor that may convince our audience is to ride our bike for economical as the most people spent money during the passed holiday season. People may want to save money for acadamic puchases.
-Another factor is that as the days get shorter and the darkness of the night may forces us to move quicker, people are more in need to get to places faster
-=We can use digital media to promote our services targetting different audience based on their means of transportation, one way to do so is to make various commercials targetting "joy riders" for sight seening and outdoor activities, "functional rider" for riders who want to save money and time when in a hurry like freshmen student who are in need of both.
+Another factor is that as the days get shorter and the darkness of the night may forces us to move quicker, people are more in need to get to places faster.
+We can use digital media to promote our services targetting different audience based on their means of transportation, one way to do so is to make various commercials targetting "joy riders" for sight seening and outdoor activities, "functional rider" for riders who want to save money and time when in a hurry like freshmen student who are in need of both.
 
 Note! The marketting campagne should be climactic aligned with the tripduration as shown on the data visualizations on Tableau
 Another trend I noticed that we have the least cutomers during the first months of the years
