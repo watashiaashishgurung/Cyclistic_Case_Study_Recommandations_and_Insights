@@ -36,7 +36,7 @@ We can use digital media to promote our services targetting different audience b
 "functional rider" for riders who want to save money and time 
 or freshmen students who are in need of both.
 
-# Extra! The marketing campagne should be climactic aligned with the tripduration as shown on the data visualizations on Tableau as if we were in a cyclerace, leading examplary. 
+## Extra! The marketing campagne should be climactic aligned with the tripduration as shown on the data visualizations on Tableau as if we were in a cyclerace, leading examplary. 
 Note! That there are only winners in the final and participation is more important than winning. But no one came this far just to come this far.. so then sitback, relax and enjoy the view.
 At the end of the day we all deserve it by now.
 
