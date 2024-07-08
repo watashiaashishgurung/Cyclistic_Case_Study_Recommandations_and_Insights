@@ -37,6 +37,8 @@ We can use digital media to promote our services targetting different audience b
 or freshmen students who are in need of both.
 
 # Extra! The marketing campagne should be climactic aligned with the tripduration as shown on the data visualizations on Tableau as if we were in a cyclerace, leading examplary. 
+Note! That there are only winners in the final and participation is more important than winning. But no one came this far just to come this far.. so then sitback, relax and enjoy the view.
+At the end of the day we all deserve it by now.
 
 
 Another trend I noticed is that we have the least cutomers during the first months of the years
