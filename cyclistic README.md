@@ -1,9 +1,9 @@
 First of all thank you for visitng my Hub. appriciate dropping by. 
-this is my first real case study as a data scientist. I might have have to updates this case study in the future. For now I'm proud that I made the finish line.
+This is my first real case study as a data scientist. I might have have to updates this case study in the future. For now I'm proud that I made the finish line.
 The cyclistic dataset was over 7GM of size and going through it like I did was as if I had to go all the way back to the invention of the wheel!
-I hope you guys credit me for the effort to make this journey, this task much easier for you. 
+I hope you guys credit me for the effort to make this journey, to make this task much easier for you. 
 Feel free to scroll through my code to get just that what you need to fine tune your owncase study.
-I'm sure you will appriciate the tools I collected. It might come in handly. It is much more then you'll probably need but I wrote them all just for the complition of the tasks. 
+I'm sure you will appriciate the tools, tips and tricks I collected along the collected. It might come in handly. It is much more then you'll probably need but I wrote them all just for the complition of the tasks. 
 I had much fun completing this case study. It was a very insightfull jouney. I am happy to reach the finish line. Goodluck to you all! Cheers! 
 oh! You may want to use the same strategy for data analysis use of other datasets. ;]
 
