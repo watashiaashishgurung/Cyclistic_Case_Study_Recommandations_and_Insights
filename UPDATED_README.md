@@ -51,9 +51,6 @@ This dashboard shows a yearly comparison between subscribers and customers bike 
 
 Screenshots of the dashboard are provided in the images directory: `Cyclistic_Case_Study_Recommandations_and_Insights/images`.
 
-![Dashboard Screenshot 1](images/dashboard_screenshot_1.png)
-![Dashboard Screenshot 2](images/dashboard_screenshot_2.png)
-![Dashboard Screenshot 3](images/dashboard_screenshot_3.png)
 **Note:** This file still needs to be updated. My findings are not definitive yet. To be continued and completed with some R Markdown codes.
 
 # Important Note!
