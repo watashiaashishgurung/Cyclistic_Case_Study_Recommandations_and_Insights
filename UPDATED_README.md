@@ -6,6 +6,12 @@ The Cyclistic dataset was over 7GB in size, and going through it felt like going
 
 I had much fun completing this case study. It was a very insightful journey. I am happy to reach the finish line. Good luck to you all! Cheers! Oh! You may want to use the same strategy for data analysis of other datasets.
 
+## Tools for Data Analysis and Visualization
+
+All the tools required for analyzing the dataset are provided in the `R_Formula_1` R file. This file contains all the necessary R code for data cleaning, manipulation, and analysis.
+
+For data visualization, I used Tableau Public. You can find the dashboard on the link to Tableau provided below.
+
 Without further ado, here are my:
 
 # Insights and Recommendations
@@ -35,7 +41,15 @@ Without further ado, here are my:
 - Referring to another case study, we can collaborate with "Bellabeat."
 - We can offer an additional service with Bellabeat, a digital smartwatch that tracks trip activity and visualizes it on the customer's smartphone.
 
+## Tableau Dashboard
+
+This dashboard shows a yearly comparison between subscribers and customers bike rides in Seoul.
+
+[View Dashboard](https://public.tableau.com/app/profile/aashish.gurung/viz/cyclistic_barchartsyear_by_year/Dashboard1#1)
+
 **Note:** This file still needs to be updated. My findings are not definitive yet. To be continued and completed with some R Markdown codes.
 
 # Important Note!
 Make sure that the Rebel is happy. When the Rebel is not happy, it is injurious to the economy. Healthy people spend more money because they have more money to spend. This requires physical, mental, and digital health.
+
+![Dashboard Image](Cyclistic_Case_Study_Recommandations_and_Insights/images/BarchartsQ1Q2Q3Q4.png)
