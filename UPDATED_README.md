@@ -47,9 +47,14 @@ This dashboard shows a yearly comparison between subscribers and customers bike 
 
 [View Dashboard](https://public.tableau.com/app/profile/aashish.gurung/viz/cyclistic_barchartsyear_by_year/Dashboard1#1)
 
+## Dashboard Screenshots
+
+Screenshots of the dashboard are provided in the images directory: `Cyclistic_Case_Study_Recommandations_and_Insights/images`.
+
+![Dashboard Screenshot 1](images/dashboard_screenshot_1.png)
+![Dashboard Screenshot 2](images/dashboard_screenshot_2.png)
+![Dashboard Screenshot 3](images/dashboard_screenshot_3.png)
 **Note:** This file still needs to be updated. My findings are not definitive yet. To be continued and completed with some R Markdown codes.
 
 # Important Note!
 Make sure that the Rebel is happy. When the Rebel is not happy, it is injurious to the economy. Healthy people spend more money because they have more money to spend. This requires physical, mental, and digital health.
-
-![Dashboard Image](Cyclistic_Case_Study_Recommandations_and_Insights/images/BarchartsQ1Q2Q3Q4.png)
